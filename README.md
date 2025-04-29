@@ -1,40 +1,32 @@
 # Assignment-4-ads
- MyHashTable & BST Java Implementation
-This project includes custom implementations of:
-
-MyHashTable<K, V> – Hash Table with separate chaining.
-
-BST<K, V> – Binary Search Tree for key-value pairs.
-
-Features
 MyHashTable
+A generic hash table using separate chaining for collision handling.
 
-Generic key-value support
+Supports operations: put, get, remove, contains, getKey, and bucket size inspection.
 
-Custom chaining with HashNode
+Uses a custom key class (MyTestingClass) with a manually defined hashCode() for uniform distribution.
 
-put, get, remove, contains, getKey
+Tested by inserting 10,000 random elements and printing the size of each bucket.
 
-Tested with 10,000 elements using a custom key class (MyTestingClass)
+BST (Binary Search Tree)
+Generic implementation for key-value storage using binary search tree logic.
 
-BST
+Supports operations: put, get, delete, and size.
 
-Insertion, search, and deletion
+Implements in-order traversal using Java's Iterable interface.
 
-In-order traversal with iterator
-
-Iterator exposes both key and value
-
-Tracks size of tree
+The iterator provides both key and value access during traversal.
 
 Supporting Classes
-MyTestingClass: Custom class for testing hash distribution
+MyTestingClass: A class used as a custom key with an overridden hashCode() method.
 
-Student: Value class used in hash table tests
+Student: A simple class used as the value in the hash table tests.
 
 Testing
-Adds 10,000 entries into the hash table
+The Main class demonstrates:
 
-Prints bucket size distribution
+Insertion of 10,000 entries into the hash table with random keys.
 
-BST tested using in-order traversal loop with access to both key & value
+Printing of the number of elements in each hash table bucket.
+
+BST in-order traversal that prints both key and value for each entry.
